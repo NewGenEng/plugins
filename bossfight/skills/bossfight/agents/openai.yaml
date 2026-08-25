@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bossfight"
+  short_description: "Beat a real quality bar with agent loops"
+  default_prompt: "Use $bossfight to turn this goal into a verified work graph and run it to a blind win."
+policy:
+  allow_implicit_invocation: true

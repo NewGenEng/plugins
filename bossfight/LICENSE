@@ -1,0 +1,11 @@
+Bossfight is licensed under the Creative Commons Attribution 4.0 International license.
+
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+Attribution:
+
+- The Gauntlet Loop technique was created by Matt Shumer.
+- Jay E at RoboNuggets packaged the technique as the Gauntlet Loop skill at https://github.com/robonuggets/gauntlet-loop.
+- Bossfight is an adapted work. It replaces the prompt-only handoff with an executable dependency graph, deterministic gates, isolated state, resumable evidence, and automated agent evaluations.
+- pstack by Lauren Tan informed the engineering principles. Bossfight does not copy pstack code.

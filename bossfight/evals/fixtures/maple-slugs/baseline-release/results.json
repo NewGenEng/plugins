@@ -1,0 +1,30 @@
+{
+  "passed": 1,
+  "failed": [
+    {
+      "input": "Hello, World!",
+      "expected": "hello-world",
+      "actual": "hello,-world!"
+    },
+    {
+      "input": "Café déjà vu",
+      "expected": "cafe-deja-vu",
+      "actual": "café-déjà-vu"
+    },
+    {
+      "input": "  Multi___ space  ",
+      "expected": "multi-space",
+      "actual": "multi___-space"
+    },
+    {
+      "input": "API v2.0 / Ready?",
+      "expected": "api-v2-0-ready",
+      "actual": "api-v2.0-/-ready?"
+    },
+    {
+      "input": "---",
+      "expected": "",
+      "actual": "---"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "input": "Hello, World!",
+    "expected": "hello-world"
+  },
+  {
+    "input": "Café déjà vu",
+    "expected": "cafe-deja-vu"
+  },
+  {
+    "input": "  Multi___ space  ",
+    "expected": "multi-space"
+  },
+  {
+    "input": "API v2.0 / Ready?",
+    "expected": "api-v2-0-ready"
+  },
+  {
+    "input": "already-slugged",
+    "expected": "already-slugged"
+  },
+  {
+    "input": "---",
+    "expected": ""
+  }
+]

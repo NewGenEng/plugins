@@ -74,6 +74,11 @@
       "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence."
     },
     {
+      "name": "bossfight",
+      "source": "bossfight",
+      "description": "A graph-based builder, verifier, and blind-critic loop for taking agent work past a concrete quality bar."
+    },
+    {
       "name": "gmail",
       "source": "third_party/gmail",
       "description": "Search, read, draft, and manage email."
@@ -175,5 +180,4 @@
     }
   ]
 }
-
 

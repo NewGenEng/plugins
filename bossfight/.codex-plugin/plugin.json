@@ -1,0 +1,37 @@
+{
+  "name": "bossfight",
+  "version": "0.1.0",
+  "description": "A graph-based builder, verifier, and blind-critic loop for taking agent work past a concrete quality bar.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com",
+    "url": "https://github.com/cursor"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/bossfight",
+  "repository": "https://github.com/cursor/plugins",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agents",
+    "builder-critic",
+    "feedback-loop",
+    "graph",
+    "verification"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Bossfight",
+    "shortDescription": "Make agent work beat a real quality bar.",
+    "longDescription": "Bossfight turns a goal into a small dependency graph, runs isolated builders through deterministic checks, and feeds blind critic verdicts back until the integrated artifact wins.",
+    "developerName": "Cursor",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Agent orchestration",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Bossfight this feature against the best comparable tool.",
+      "Run a blind builder-critic loop on this design.",
+      "Turn this goal into a verified work graph."
+    ]
+  }
+}

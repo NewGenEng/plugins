@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "maple-slugs",
+      "fixture": "fixtures/maple-slugs",
+      "prompt": "Bossfight this: the slugger in slugger.py is producing unstable public identifiers. Make slugify match every input/output pair in reference_cases.json while keeping its single-function API. Treat baseline-release as the frozen current release to beat and reference_cases.json as the product contract; do not edit either. Keep the Bossfight evidence at .bossfight/maple-slugs so another engineer can audit the run. Finish only when the integrated artifact wins.",
+      "protected": [
+        "baseline-release",
+        "reference_cases.json"
+      ],
+      "holdout": [
+        "acceptance_ledger.py",
+        "tests"
+      ],
+      "checks": [
+        {
+          "name": "behavior",
+          "argv": [
+            "python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "cwd": ".",
+          "timeout_seconds": 60
+        },
+        {
+          "name": "bossfight evidence",
+          "argv": [
+            "python3",
+            "acceptance_ledger.py"
+          ],
+          "cwd": ".",
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  ]
+}
